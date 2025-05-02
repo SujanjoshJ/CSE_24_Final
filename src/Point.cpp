@@ -64,6 +64,11 @@ void Point::setColor(float r, float g, float b){
     this->b = b;
 }
 
+void Point::setPos(float x, float y){
+    this->x = x;
+    this->y = y;
+}
+
 bool Point::contains(float mx, float my) {
     if (mx == x && my == x){
         return true;

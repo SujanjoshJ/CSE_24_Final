@@ -39,6 +39,8 @@ public:
 
     void back(Shape* selected);
 
+    void move(Shape* selected, float mx, float my);
+
     void clear();
 
     void render();

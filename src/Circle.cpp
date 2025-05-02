@@ -44,3 +44,8 @@ void Circle::setColor(float r, float g, float b) {
     this->g = g;
     this->b = b;
 }
+
+void Circle::setPos(float x, float y){
+    this->x = x;
+    this->y = y;
+}

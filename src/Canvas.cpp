@@ -84,6 +84,14 @@ void Canvas::endScribble(){
     }
 }
 
+void Canvas::move(Shape* selected, float mx, float my){
+    for (unsigned int i = 0; i <shapes.size(); i++){
+        if (selected == shapes[i]){
+            shapes[i]->setPos(mx, my);
+        }
+    }
+}
+
 Shape* Canvas::getSelectedShape(float mx, float my) {
     Shape* selectedShape = nullptr;
 
