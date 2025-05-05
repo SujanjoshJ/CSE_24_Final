@@ -12,13 +12,18 @@ Circle::Circle() {
     b = 0.0;
 }
 
-Circle::Circle(float x, float y, float r, float g, float b) {
+Circle::Circle(float x, float y, float r, float g, float b, int s) {
     this->x = x; 
     this->y = y; 
-    radius = 0.2;
+    this->radius = setSize(s);
     this->r = r; 
     this->g = g; 
     this->b = b; 
+}
+
+void Circle::setterSize(int s){
+    float temp = setSize(s);
+    this->radius = temp;
 }
 
 void Circle::draw() {
@@ -31,6 +36,20 @@ void Circle::draw() {
         }
     glEnd();
 }
+float Circle::setSize(int s){
+    if (s == 1){
+        radius = 0.1;
+        return radius;
+    } else if (s == 2) {
+        radius = 0.2;
+        return radius;
+    } else if (s == 3) {
+        radius = 0.3;
+        return radius;
+    }
+    return radius;
+}
+
 
 bool Circle::contains(float mx, float my) {
     if (mx >= x - radius && mx <= x + radius && my <= y + radius && my >= y - radius) {

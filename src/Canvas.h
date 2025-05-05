@@ -21,13 +21,13 @@ public:
 
     void addPoint(float x, float y, float r, float g, float b, int size);
 
-    void addRectangle(float x, float y, float r, float g, float b);
+    void addRectangle(float x, float y, float r, float g, float b, int size);
 
-    void addCircle(float x, float y, float r, float g, float b);
+    void addCircle(float x, float y, float r, float g, float b, int size);
 
-    void addTriangle(float x, float y, float r, float g, float b);
+    void addTriangle(float x, float y, float r, float g, float b, int size);
 
-    void addPolygon(float x, float y, float r, float g, float b);
+    void addPolygon(float x, float y, float r, float g, float b, int size);
 
     void startScribble();
 

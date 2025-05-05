@@ -7,6 +7,7 @@
 
 class Scribble: public Shape {
     std::vector<Point*> points;
+    int size;
 
 public:
 
@@ -14,9 +15,11 @@ public:
 
     void draw();
 
+    int setSize(int s);
     bool contains(float mx, float my);
     void setColor(float r, float g, float b);
     void setPos(float x, float y);
+    void setterSize(int s);
     
 };
 #endif

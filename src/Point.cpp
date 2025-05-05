@@ -34,6 +34,7 @@ void Point::draw(){
     glEnd();
 }
 
+
 float Point::getX() const {
     return x;
 }
@@ -64,9 +65,9 @@ void Point::setColor(float r, float g, float b){
     this->b = b;
 }
 
-void Point::setPos(float x, float y){
-    this->x = x;
-    this->y = y;
+void Point::setPos(float mx, float my){
+    this->x = mx;
+    this->y = my;
 }
 
 bool Point::contains(float mx, float my) {
@@ -75,3 +76,7 @@ bool Point::contains(float mx, float my) {
     }
     return false;
 }
+void Point::setterSize(int s){
+    this->size = s;
+}
+

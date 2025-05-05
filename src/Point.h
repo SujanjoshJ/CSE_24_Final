@@ -19,19 +19,23 @@ public:
 
     void draw();
 
+    int setSize(int s);
+
     float getX() const;
     float getY() const;
     float getR() const;
     float getG() const;
     float getB() const;
     int getSize() const;
+   
 
     // create setters for scribble to build off of
 
     bool contains(float mx, float my);
 
     void setColor(float r, float g, float b);
-    void setPos(float x, float y);
+    void setPos(float mx, float my);
+    void setterSize(int s);
 
 
 

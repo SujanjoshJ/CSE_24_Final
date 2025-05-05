@@ -12,20 +12,20 @@ void Canvas::addPoint(float x, float y, float r, float g, float b, int size) {
     shapes.push_back(new Point(x, y, r, g, b, size));
 }
 
-void Canvas::addRectangle(float x, float y, float r, float g, float b) {
-    shapes.push_back(new Rectangle(x, y, r, g, b));
+void Canvas::addRectangle(float x, float y, float r, float g, float b, int size) {
+    shapes.push_back(new Rectangle(x, y, r, g, b, size));
 }
 
-void Canvas::addCircle(float x, float y, float r, float g, float b) {
-    shapes.push_back(new Circle(x, y, r, g, b));
+void Canvas::addCircle(float x, float y, float r, float g, float b, int size) {
+    shapes.push_back(new Circle(x, y, r, g, b, size));
 }
 
-void Canvas::addTriangle(float x, float y, float r, float g, float b){
-    shapes.push_back(new Triangle(x, y, r, g, b));
+void Canvas::addTriangle(float x, float y, float r, float g, float b, int size){
+    shapes.push_back(new Triangle(x, y, r, g, b, size));
 }
 
-void Canvas::addPolygon(float x, float y, float r, float g, float b){
-    shapes.push_back(new Polygon(x, y, r, g, b));
+void Canvas::addPolygon(float x, float y, float r, float g, float b, int size){
+    shapes.push_back(new Polygon(x, y, r, g, b, size));
 }
 
 void Canvas::front(Shape* selected) {
