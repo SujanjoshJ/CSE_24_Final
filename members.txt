@@ -1,0 +1,16 @@
+Group Name
+----------
+
+Final Project CSE 024
+
+
+Designated Submitter
+--------------------
+
+Sujan Joshua Julian - SujanjoshJ
+
+
+Github Repo Link
+--------------------
+
+https://github.com/SujanjoshJ/CSE_24_Final
